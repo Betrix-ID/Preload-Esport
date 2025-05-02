@@ -1,70 +1,86 @@
 > ![git big](/Esport/img/IFS.png)
 
-<h1>♨️ Preload Esport - Game Performance Booster Utility</h1><hr/>> [!NOTE] Deskripsi:
+<h1>♨️ Preload Esport - Game Performance Booster Utility</h1>
 
-Script C++ ini dirancang untuk meningkatkan performa game di Android dengan melakukan preload terhadap file library, cache, dan resource penting sebelum game dijalankan.
+<hr/>
 
+> [!NOTE]  
+> **Description:**  
+> - Script C++ ini dibuat untuk meningkatkan performa game Android dengan memanfaatkan preload library dan resource penting sebelum game dijalankan. Mengoptimalkan kecepatan dan responsivitas saat bermain.
 
+<hr/>
 
+> [!IMPORTANT]  
+> **Features:**  
+> 1. **Preload High Mode**: Melakukan preload intensif untuk meningkatkan respons game.  
+> 2. **Selective File Preload**: Menyediakan opsi preload file tunggal untuk debugging atau tuning.  
+> 3. **Live Memory Info**: Tampilkan status memori dan preload secara real-time.  
+> 4. **Kill All Mode**: Menghentikan preload saat game sudah ditutup.  
+> 5. **Auto Game Detection**: Deteksi dan preload otomatis berdasarkan daftar package game.  
+> - *Efek dapat bervariasi tergantung pada device, versi Android, dan resource game.*
 
-<hr/>> [!IMPORTANT] Fitur Utama:
+<hr/>
 
-1. Preload High Mode: Melakukan preload agresif dengan library dan cache Vulkan/OpenGL sebelum game berjalan.
-2. Preload Low Mode: Preload ringan untuk sistem Android agar performa UI tetap responsif.
-3. Auto Detection: Mendeteksi game yang sedang berjalan lalu aktifkan preload dinamis.
-4. Kill System: Menghentikan preload saat game ditutup atau tidak aktif.
-5. NFC Notification: Menampilkan notifikasi sistem via shell tanpa UI.
+> [!TIP]  
+> **Tips Before Use:**  
+> - Pastikan perangkat Android sudah di-root agar preload bisa optimal.  
+> - Simpan daftar game di: <code>/sdcard/Esport/Gamelist.txt</code>  
+> - Gunakan perintah: <code>ps -ef | grep PerloadEsport</code> untuk melihat proses aktif.
 
-Efek tergantung pada device, Android version, dan game yang dimainkan.
+<hr/>
 
+> [!WARNING]  
+> **License & Credit Notice:**  
+> - Jika menggunakan script ini dalam proyek lain, mohon cantumkan **credit ke pembuat asli**.  
+> - Dilarang menyebarluaskan versi modifikasi tanpa mencantumkan sumber.  
+> - Penggunaan tanpa pemahaman dapat menyebabkan crash atau over-preload pada sistem.
 
+<hr/>
 
-<hr/>> [!TIP] Tips Penggunaan:
+<h2>🚀 Usage</h2>
 
-Pastikan Android mendukung akses root agar preload bisa optimal.
-Letakkan Gamelist.txt di folder /sdcard/Esport/ yang berisi package name game.
-Cek status preload dengan: <code>ps -ef | grep PerloadEsport</code>
+<pre><code>sh /sdcard/Esport/run.sh
+</code></pre>
 
-
-
-
-<hr/>> [!WARNING] Lisensi & Kredit:
-
-Harap sertakan credit jika menggunakan ulang script ini.
-Dilarang memodifikasi dan menyebarkan tanpa mencantumkan sumber.
-Penggunaan sembarangan bisa menyebabkan penggunaan RAM berlebih atau crash.
-
-
-
-
-<hr/><h2>🚀 Cara Pakai</h2><pre><code>PerloadEsport [OPTION]
-</code></pre><table>
+<table>
 <thead>
-<tr><th>Opsi</th><th>Deskripsi</th></tr>
+<tr><th>Option</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><code>-L</code></td><td>Aktifkan preload dengan mode cache (lebih agresif).</td></tr>
-<tr><td><code>-dL &lt;file&gt;</code></td><td>Preload satu file secara manual (debug mode).</td></tr>
-<tr><td><code>-v</code></td><td>Tampilkan info memori dan status preload.</td></tr>
-<tr><td><code>-k</code></td><td>Hentikan semua preload yang aktif (kill).</td></tr>
+<tr><td><code>run.sh</code></td><td>Aktifkan preload sistem sebelum menjalankan game (mode agresif).</td></tr>
+<tr><td><code>run.sh kill</code></td><td>Matikan semua proses preload yang sedang berjalan.</td></tr>
 </tbody>
-</table><hr/><h2>📚 Contoh Penggunaan</h2><pre><code># Mulai preload sistem dengan mode cache (disarankan sebelum game dibuka)
-PerloadEsport -L
+</table>
 
-# Hanya preload 1 file library secara manual
-PerloadEsport -dL /vendor/lib64/libGLES_mali.so
+<hr/>
 
-# Cek status preload dan info RAM
-PerloadEsport -v
+<h2>📚 Example Commands</h2>
 
-# Hentikan semua preload yang sedang berjalan
-PerloadEsport -k
-</code></pre><hr/><h2>ℹ️ Info Tambahan</h2><ul>
-<li><b>Lokasi File Game</b>: /sdcard/Esport/Gamelist.txt</li>
-<li><b>Preload Log</b>: gunakan <code>logcat</code> atau <code>ps</code> untuk melihat proses preload</li>
-<li><b>Tips</b>: Reboot setelah penggunaan intens agar sistem tetap segar</li>
-</ul><hr/><div align="center" style="font-family: Arial, sans-serif;">  <h2>🙌 Dukung Project Ini</h2>
-  <p>Follow, support, atau traktir kopi!</p>  <div style="margin: 20px 0;">
+<pre><code># Jalankan preload sebelum bermain
+sh /sdcard/Esport/run.sh
+
+# Hentikan preload
+sh /sdcard/Esport/run.sh kill
+</code></pre>
+
+<hr/>
+
+<h2>ℹ️ More Info</h2>
+
+<ul>
+<li><b>Lokasi Game List</b>: /sdcard/Esport/Gamelist.txt</li>
+<li><b>Monitoring</b>: Gunakan perintah logcat atau <code>ps</code> untuk memantau preload</li>
+<li><b>Tips</b>: Gunakan bersamaan dengan GLTools atau Magisk module tuning</li>
+</ul>
+
+<hr/>
+
+<div align="center" style="font-family: Arial, sans-serif;">
+
+  <h2>🙌 If you like my work</h2>
+  <p>Follow me, support me, or just send a coffee!</p>
+
+  <div style="margin: 20px 0;">
     <a href="https://www.instagram.com/pai_calll?igsh=OGZnYmZ5OGdiMG9r" target="_blank" style="text-decoration: none;">
       <img src="https://img.shields.io/badge/-Instagram-red?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
     </a>
@@ -77,5 +93,8 @@ PerloadEsport -k
     <a href="https://t.me/Yeye_PID" target="_blank" style="text-decoration: none;">
       <img src="https://img.shields.io/badge/-Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
     </a>
-  </div>  <hr style="border: none; height: 1px; background: #ddd; margin: 40px 0;"></div>
----
+  </div>
+
+  <hr style="border: none; height: 1px; background: #ddd; margin: 40px 0;">
+
+</div>
