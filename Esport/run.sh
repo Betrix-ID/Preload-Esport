@@ -26,7 +26,7 @@ shell() {
 	printf "\n"
 	printf "\t\t       - Author              :  @UnixeID\n"
 	printf "\t\t       - Version             :  1.0\n"
-	printf "\t\t       - Release            :  18 - April - 2025\n"
+	printf "\t\t       - Release            :  3 - Mei - 2025\n"
 	printf "\t\t       - Shell Name      :  Perload Esport\n"
 	printf "\n"
 	printf "    |_______________________________________|\n"
