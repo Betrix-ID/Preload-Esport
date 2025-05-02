@@ -68,9 +68,9 @@ sh /sdcard/Esport/run.sh kill
 <h2>ℹ️ More Info</h2>
 
 <ul>
-  <li><a href="https://github.com/mooware/ldpreload-cpp" target="_blank">LD_PRELOAD Hooking (C++)</a></li>
-  <li><a href="https://stackoverflow.com/questions/16755662/set-ld-preload-when-executing-a-command-in-shell-script" target="_blank">LD_PRELOAD di Shell Script</a></li>
-  <li><a href="https://stackoverflow.com/questions/15013718/how-to-preload-data-before-main" target="_blank">Preload Data sebelum main() di C++</a></li>
+  <li><a href="https://linux.die.net/man/8/vmtouch" target="_blank">Documentasi</a></li>
+  <li><a href="https://manpages.debian.org/testing/vmtouch/vmtouch.8.en.html" target="_blank">Debug test vmtouch</a></li>
+  <li><a href="https://packages.gentoo.org/packages/dev-util/vmtouch" target="_blank">Preload</a></li>
 </ul>
 
 <hr/>
