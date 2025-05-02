@@ -1,5 +1,5 @@
-# Date : 25 - 04 - 2025          
-        [ Perload Esport - Nonroot ]
+# Date : 03 - 05 - 2025          
+        [ Preload Esport - Nonroot ]
                    Author 
      Telegram @UnixeID | Github Betrix-ID
                 version : 1.0
@@ -7,17 +7,17 @@
             install with > Brevent
             
   ** ` Disclaimer: ` **
- <Script ini ditujukan untuk penggunaan pribadi guna mengelola renderer grafis di Android. Segala risiko penggunaan ditanggung pengguna. Root mungkin diperlukan.>
+ <Script ini C ini saya bikin untuk mengontrol dan mengunci file ke RAM fisik secara otomatis>
 
  ** ` Mode Optimasi: ` **
- <Sebuah utilitas ringan untuk mengatur renderer grafis Android melalui driver ANGLE. Dengan memanfaatkan pengaturan sistem seperti pm dan settings put, script ini memungkinkan aplikasi menggunakan Vulkan meskipun secara default hanya mendukung OpenGLES. Proses ini membantu meningkatkan efisiensi GPU, memperluas kompatibilitas grafis, dan memberikan pengalaman visual yang lebih halus — terutama saat bermain game atau menjalankan aplikasi berat secara grafis..>
+ <Preload Esport adalah sebuah utilitas ringan yang bertujuan meningkatkan performa game Android dengan memuat file library penting ke RAM sebelum game dijalankan. Dengan metode preload dan lock memori (mlock), script ini membantu mengurangi waktu loading, meningkatkan responsivitas, serta menjaga kestabilan performa saat bermain. Proses ini dilakukan otomatis berdasarkan daftar game aktif, tanpa perlu modifikasi aplikasi, namun tetap memerlukan akses root untuk hasil optimal.>
 
- ** ` Efek yang Diperoleh: ` **
-  [1. Performa aplikasi meningkat.]
-  [2. Tampilan lebih halus dan responsif.]
-  [3. Penggunaan resource lebih efisien.]
-  [4. Kompatibilitas aplikasi jadi lebih luas.]
-  [5. Konsumsi daya bisa lebih hemat.]
+   ** ` Efek yang diperoleh: ` **
+[1. Waktu loading game lebih cepat]
+[2. Pengurangan lag atau stuttering]
+[3. Performa GPU/CPU lebih stabil]
+[4. Responsivitas meningkat saat switching scene]
+[5. Konsumsi resource lebih efisien saat idle]
 > Efek bergantung pada perangkat & sistem.
 
 # Recomened :
